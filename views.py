@@ -3,8 +3,11 @@
 httf Views
 author @alanwikid
 """
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 
 def index(request):
     return render(request, 'home.html')
+
+def mail(request):
+    return redirect('https://www.zoho.com/login.html')

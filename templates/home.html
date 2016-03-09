@@ -1,0 +1,269 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Hack the Future Clube</title>
+        <meta name="keywords" content="hack, crianças, kids, raspberry, python, educação.">
+        <meta name="description" content="Hack the Future Club, uma iniciativa itinerante por comunidades da baixada santista.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta property="og:image:url" content="{% static 'img/social/httf-aula.jpg' %}" />
+        <link rel="canonical" href="http://www.hackthefuture.club" />
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400italic,400">
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Droid+Sans">
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lobster">
+        <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'flexslider.css' %}">
+        <link rel="stylesheet" href="{% static 'style.css' %}">
+        <link rel="shortcut icon" href="{% static 'ico/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{% static 'ico/apple-touch-icon-144-precomposed.png' %}">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{% static 'ico/apple-touch-icon-114-precomposed.png' %}">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% static 'ico/apple-touch-icon-72-precomposed.png' %}">
+        <link rel="apple-touch-icon-precomposed" href="{% static 'ico/apple-touch-icon-57-precomposed.png' %}">
+    </head>
+    <body>
+        <div class="container">
+          <div class="header row">
+              <div class="span12">
+                  <div class="navbar">
+                      <div class="navbar-inner">
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                        </a>
+                        <div class="logopng container" style="height: 40px; width: 500px; margin: 10px auto; position: relative;">
+                          <div>
+                             <img src="{% static 'img/logos/logohttf.png' %}">
+                          </div>
+                        </div>
+                        <div class="nav-collapse collapse">
+                            <ul class="nav pull-right">
+                                <li class="current-page">
+                                    <a data-scroll href="#home"><i class="icon-home"></i><br />Home</a>
+                                </li>
+                                <li>
+                                    <a data-scroll href="#quemsomos"><i class="icon-camera"></i><br />Quem Somos</a>
+                                </li>
+                                <li>
+                                    <a data-scroll href="#equipe"><i class="icon-user"></i><br />Equipe</a>
+                                </li>
+                                <li>
+                                    <a data-scroll href="#contato"><i class="icon-comments"></i><br />Contato</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+              <h1 class="nome-project">
+                Hack the future clube
+              </h1>
+          </div>
+        </div>
+        <div class="slider">
+            <div class="container">
+                <div id = 'news' class="presentation container">
+                    <p class='news'>                
+                        <a href="https://mega.nz/#!u4R0FBSY!qV-wfSgwI0Yp5IAV2CN5-fDdeBFdqKMhYoP525EQwcs" target="_blank">
+                            <span style="color: red;">Novo: </span> Clique para baixar o material sobre as preocupações centrais de IoT segundo Sérgio Branco, diretor do ITS  (Instituto de Tecnologia e Sociedade) 
+                            <br>
+                            Questões que precisam ser melhor resolvidas e reguladas pela sociedade: <br>
+                            1) privacidade <br>
+                            2) responsabilidade civil<br>
+                            3) interoperabilidade<br>
+                            <hr>
+                        </a>
+
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="span10 offset1">
+                        <div class="flexslider">
+                            <ul class="slides">
+                              <li data-thumb="{% static 'img/slider/httf-aula.jpg' %}">
+                                    <img src="{% static 'img/slider/httf-aula.jpg' %}">
+                                    <p class="flex-caption">Gustavo em destaque. Raspbian S.O. ao Fundo</p>
+                                </li>
+                                <li data-thumb="{% static 'img/slider/aula-0.jpg' %}">
+                                    <img src="{% static 'img/slider/aula-0.jpg' %}">
+                                    <p class="flex-caption">Aula 0 - Instituto Religar</p>
+                                </li> 
+                              <li data-thumb="{% static 'img/slider/jm.jpg' %}">
+                                    <img src="{% static 'img/slider/jm.jpg' %}">
+                                    <p class="flex-caption">Júlia hackeando o Raspberry Pi no Scratch</p>
+                                </li>
+                                <li data-thumb="{% static 'img/slider/evinho.jpg' %}">
+                                    <img src="{% static 'img/slider/evinho.jpg' %}">
+                                    <p class="flex-caption">Everton Soares foi um dos doadores de Raspberry Pi para essa iniciativa. </p>
+                                </li>
+                                 <li data-thumb="{% static 'img/slider/garoa.jpg' %}">
+                                    <img src="{% static 'img/slider/garoa.jpg' %}">
+                                    <p class="flex-caption">1º dia do Mini Pc - Garoa Hacker Clube/SP</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id = 'quemsomos' class="presentation container">
+            <h2>Nós somos o <span class="orange">Hack the Future Clube</span>, uma iniciativa itinerante super legal pelas favelas da baixada santista.</h2>
+            <p>Nosso objetivo é estimular o empoderamento e protagonismo infantil através da tecnologia.</p>
+        </div>
+        <div class="team container" id='equipe'>
+            <div class="team-title">
+                <h3>Equipe</h3>
+            </div>
+            <div class="row">
+                <div class="team-text span3">
+                    <img src="{% static 'img/team/alan.jpg' %}" alt="">
+                    <h4>Alan Silva</h4>
+                    <p>Facilitador</p>
+                    <p>email: <a href="mailto:alan@hackthefuture.club">alan@hackthefuture.club</a></p>
+                    <div class="social-links">
+                        <a class="facebook" href="https://www.facebook.com/alan.wikida"></a>
+                        <a class="twitter" href="https://twitter.com/alanwikid"></a>
+                    </div>
+                </div>
+                <div class="team-text span3">
+                    <img src="{% static 'img/team/isaque.jpg' %}" alt="">
+                    <h4>Isaque Nobre</h4>
+                    <p>Educador</p>
+                    <p>email: <a href="mailto:isaque@hackthefuture.club">isaque@hackthefuture.club</a></p>
+                    <div class="social-links">
+                        <a class="facebook" href="https://www.facebook.com/isnar.crono"></a>
+                    </div>
+                </div>
+                <div class="team-text span3">
+                    <img src="{% static 'img/team/wesley.jpg' %}" alt="">
+                    <h4>Wesley Nunes</h4>
+                    <p>Educador</p>
+                    <p>email: <a href="mailto:wesley@hackthefuture.club">wesley@hackthefuture.club</a></p>
+                    <div class="social-links">
+                        <a class="facebook" href=""></a>
+                    </div>
+                </div>
+                 <div class="team-text span3">
+                    <img src="{% static 'img/team/eduardo.jpg' %}" alt="">
+                    <h4>Eduardo Rodrigues Bezerra Almeida</h4>
+                    <p>Mestre Jedi (Conselheiro)</p>
+                    <p>email: <a href="mailto:eduardo@hackthefuture.club">eduardo@hackthefuture.club</a></p>
+                    <div class="social-links">
+                        <a class="facebook" href="https://www.facebook.com/eduardo.bezerraalmeida"></a>
+                    </div>
+                </div>
+                 <div class="team-text span3">
+                    <img src="{% static 'img/team/bete.jpg' %}" alt="">
+                    <h4>Maria Elizabete</h4>
+                    <p>Apoio</p>
+                    <p>email: <a href="mailto:bete@hackthefuture.club">bete@hackthefuture.club</a></p>
+                    <div class="social-links">
+                        <a class="facebook" href="https://www.facebook.com/elizabete.fiel"></a>
+                    </div>
+                </div>
+                <div class="team-text span3">
+                    <img src="{% static 'img/team/matheus.jpg' %}" alt="">
+                    <h4>Matheus da Silva Machado</h4>
+                    <p>Professor de Inglês</p>
+                    <p>email: <a href="mailto:matheus@hackthefuture.club">matheus@hackthefuture.club</a></p>
+                    <div class="social-links">
+                        <a class="facebook" href="https://www.facebook.com/matheus.machado.18659"></a>
+                    </div>
+                </div>
+                <div class="team-text span3">
+                    <img src="{% static 'img/team/thiago.jpg' %}" alt="">
+                    <h4>Thiago</h4>
+                    <p>Agente Comunitário</p>
+                    <p>email: <a href="mailto:wesley@hackthefuture.club">thiago@hackthefuture.club</a></p>
+                    <div class="social-links">
+                        <a class="facebook" href=""></a>
+                    </div>
+                </div>
+                <div class="team-text span3">
+                    <img src="{% static 'img/team/alex.jpg' %}" alt="">
+                    <h4>Alex Paiva</h4>
+                    <p>Agente Humanitário</p>
+                    <p>email: <a href="mailto:alex@hackthefuture.club">alex@hackthefuture.club</a></p>
+                    <div class="social-links">
+                        <a class="facebook" href="https://www.facebook.com/sosreligar.baixadasantista"></a>
+                    </div>
+                </div>
+                <div class="team-text span3">
+                    <img src="{% static 'img/team/marcelo.jpg' %}" alt="">
+                    <h4>Marcelo Quintela</h4>
+                    <p>Agente Humanitário</p>
+                    <p>email: <a href="mailto:marcelo@hackthefuture.club">marcelo@hackthefuture.club</a></p>
+                    <div class="social-links">
+                        <a class="facebook" href="https://www.facebook.com/adm.marceloquintela"></a>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+         </br></br>
+         <div class="team container" id='equipe'>
+            <div class="team-title">
+                <h3>Agente Multiplicador</h3>
+            </div>
+            <div class="team-text span3">
+                <img src="{% static 'img/team/richard-stallman.jpg' %}" alt="">
+                <h4>Richard Stallman</h4>
+                <p>Hacker Ativista</p>
+                <div class="social-links">
+                    <a class="wiki" href="https://pt.wikipedia.org/wiki/Richard_Matthew_Stallman" target='_blank'></a>
+                </div>
+            </div>
+            <div class="team-text span3">
+                <img src="{% static 'img/team/aaron.jpg' %}" alt="">
+                <h4>Aaron Swartz <i>(in memorian)</i></h4>
+                <p>Hacker Ativista</p>
+                <div class="social-links">
+                    <a class="wiki" href="https://pt.wikipedia.org/wiki/Aaron_Swartz" target='_blank'></a>
+                </div>
+            </div>
+        </div>
+         </br></br>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="widget span3">
+                        <h4>Entre em contato por telefone ou por um dos seguintes email's</h4>
+                        <p><i class="icon-map-marker"></i>Local: Baixada Santista.</p>
+                        <p><i class="icon-phone"></i> Oi (Fixo): 98848-1731</p>
+                        <p>email: <a href="mailto:alan@hackthefuture.club">alan@hackthefuture.club</a></p>
+                        <p>email: <a href="mailto:isaque@hackthefuture.club">isaque@hackthefuture.club</a></p>
+
+                    </div>
+                </div>
+                <div class="footer-border"></div>
+                <div class="row">
+                    <div id='contato' class="copyright span4">
+                        <p>Baixada Santista, 2003-2015. Por <a href="http://twitter.com/alanwikid">alanwikid</a>.</p>
+                    </div>
+                    <div class="copyright span4 "> 
+                      <p>Somos signatários dos princípios do Small Acts Manifesto. <a href="http://smallactsmanifesto.org" target="__blank" title="Small Acts Manifesto"><img src="http://smallactsmanifesto.org/static/images/smallacts-badge-88x31.png" style="border: none;" alt="Small Acts Manifesto" /></a></p>
+                    </div>
+                    <div class="copyright span4 "> 
+                        <p><a href="https://www.facebook.com/Projeto-Isonomia-567603696716923/" target="__blank" title="Isonomia"><img src="{% static 'img/logos/isonomia.jpg' %}" style="border: none;" alt="Isonomia" /></a></p>
+                    </div>
+                     <div class="copyright span4"> 
+                        <p><a href="http://sosreligar.org" target="__blank" title="SOS Religar"><img src="{% static 'img/logos/sosreligar.png' %}" style="border: none;" alt="SOS" /></a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="{% static 'js/jquery-1.8.2.min.js' %}"></script>
+        <script src="{% static 'js/scripts.js' %}"></script>
+        <script src="{% static 'js/smooth-scroll.js' %}"></script>
+        <script src="{% static 'js/jquery.flexslider.js' %}"></script>
+        <script>
+            smoothScroll.init();
+        </script>
+    </body>
+
+</html>
+

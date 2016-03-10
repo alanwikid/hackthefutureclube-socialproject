@@ -38,6 +38,7 @@ strong { font-weight: bold; }
 
 .header .navbar {
     margin-bottom: 0;
+    margin-top: -20px;
 }
 
 .header .navbar-inner {
@@ -53,6 +54,10 @@ strong { font-weight: bold; }
 
 .header .navbar-inner .adjust {
     top: 20px;
+}
+
+.header .navbar-inner .position {
+    margin-top: 22px;
 }
 
 .header .nome-project {
@@ -176,7 +181,7 @@ strong { font-weight: bold; }
     font-size: 16px;
     font-style: italic;
     text-align: justify;
-    width: 770px;
+    width: 100%;
 }
 
 
